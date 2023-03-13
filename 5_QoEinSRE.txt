@@ -1,0 +1,390 @@
+Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SC1/47QoE in Software Reliability:            
+Conceptual and Practical Viewpoints
+Prof. Rivalino Matias, Jr.
+School of Computer Science
+Federal University of UberlÃ¢ndia
+Uberlandia MG, Brazil
+Duke ECE -Guest Lecture Feb 7, 2023
+Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCIntroduction
+â€¢Software reliability engineering (SRE) is intrinsically a 
+quantitative discipline .
+â€“It is strongly based on statistics and probability, along with software 
+engineering.
+â€“It allows for estimating metrics such as mean time to failure , 
+probability of failure , failure rate , warranty time , etc.
+â–ªThese metrics are useful to evaluate software systems.
+â–ªe.g., comparing two similar and competing systems concerning their reliability .
+â€¢Note that SRE applies not only to critical systems.   
+â€“Nowadays, consumer software is used as part of critical systems.
+â€“Consumer software products have had less attention in SRE studies.
+â€¢Reliability figures associated with consumer software are scarce .QoE in Software Reliability
+2/47Duke ECE -Guest Lecture Feb 7, 2023 2/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCIntroduction
+â€¢Since 2009, we began investigating what the reliability 
+figures of commodity software products look like. 
+â€“The first studies were focused on desktop operating system software. 
+â€“The goal was to answer to following research question: 
+What are the typical reliability figures observed in desktop OS software?
+â€¢To answer this question our research group collected and 
+analyzed failure data from real computers.  
+â€“We focused on computers with Windows 7 OS.
+â€“The failure data was collected from different groups of computers.
+â€“The dataset analyzed contained more than 30,800 failures.QoE in Software Reliability
+3/47Duke ECE -Guest Lecture Feb 7, 2023 3/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCIntroduction
+â€¢The reliability figures obtained were lower than we expected. 
+â€“Most of the systems sampled showed an R(t=8 h) < 50%.
+â€¢Subsequent studies we performed showed similar results. 
+â€“[SACâ€™13], [SACâ€™14], [SBESCâ€™15], [SACâ€™16], [SACâ€™17], [JSSâ€™18], [SBESCâ€™18], 
+[SBESCâ€™19], [SBESCâ€™20], [SBESCâ€™21].
+â€¢These results made us raise questions like:
+â€“How reliability influences consumers' decision of using a software 
+product?
+â€“Is there any association between software reliability and the quality of 
+user experience?
+â€¢These questions motivated us to investigate how the 
+concept of QoE relates to SRE.QoE in Software Reliability
+4/47Duke ECE -Guest Lecture Feb 7, 2023 4/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCQoE
+â€¢It stands for Quality of Experience. 
+â€“It is defined as the degree of delight or annoyance of the user of an 
+application or service (ITU-T P.10/G.100, 2016 ).
+â€“QoE has emerged similarly to QoS (Quality of Service), which is a 
+more objective measure of service parameters (e.g., throughput).
+â€¢QoS is not related to the user, but to the service itself (e.g., network).
+â€¢QoE however is a subjective measure from the userâ€™s perspective of the quality of 
+the service.   
+â€“Different factors are considered as influencing the userâ€™s perceived 
+quality of a service/application.
+â€¢Human influence factors (e.g., expectations, background, needs, goals, â€¦)
+â€¢Contextual influence factors (e.g., physical location, ToD, task type, â€¦)
+â€¢System influence factors (e.g., responsiveness, user interface, ergonomics, â€¦)   QoE in Software Reliability
+5/47Duke ECE -Guest Lecture Feb 7, 2023 5/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SC
+QoE, QoS, and SRE
+â€¢My view on QoS & QoE in SRE.
+â€“R(t), MTBF,â€¦ â†’  QoS
+â€“MOS, ACR,â€¦ â†’  QoE
+â€¢Importance of QoE in SRE.
+â€“QoS-like reliability metrics are estimated purely from a technical 
+perspective.
+â€¢Strongly based on lifetime data analyses; as well the understanding of failure 
+mechanisms and failure modes, along with their likelihood of occurrence.
+â€¢These metrics do not express the softwareâ€™s reliability from the userâ€™s perspective, 
+which suggests they may not be assumed to be associated with user satisfaction.
+â€¢This could explain a situation like the above -mentioned, i.e., a software product 
+demonstrating medium to low reliability figures, but is extensively used.QoE in Software Reliability
+6/47Duke ECE -Guest Lecture Feb 7, 2023 6/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCOur Approach
+â€¢Understand the Influence Factors on the quality of user 
+experience with respect to software reliability.
+â€¢Measure the goodness of fit of QoS -like reliability metrics to 
+userâ€™s satisfaction with respect to software reliability.
+â€¢Study how reliability metrics can incorporate the userâ€™s 
+perspective of the software reliability.QoE in Software Reliability
+7/47Duke ECE -Guest Lecture Feb 7, 2023 7/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCExamples of research works.
+Study #1: Operating system reliability from the quality of 
+experience viewpoint: an exploratory study, ACM SAC 2013.
+Study #2: Reliability Assessment of Commercial Off -the-shelf 
+Operating System Software: An Empirical Study. SBESC 2018.
+Study #3: Influence Factors on the Quality of User Experience 
+in OS Reliability: A Qualitative Experimental Study, ARES 2018 .
+Study #4: Software Reliability and Quality of User Experience: 
+A Quanti -Qualitative Study, Master Thesis, UFU 2019.
+* A complete list is shown on slides 43 and 44.QoE in Software Reliability
+8/47Duke ECE -Guest Lecture Feb 7, 2023 8/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCQoE in Software Reliability
+Study #1
+Operating system reliability from thequality of
+experience viewpoint :anexploratory study,
+ACM SAC 2013 .
+9/47Duke ECE -Guest Lecture Feb 7, 2023 9/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1
+â€¢A modern operating system (OS) is composed of parts 
+running at both kernel and user spaces:
+â€“OS kernel subsystems
+â€“OS Services and OS ApplicationsQoE in Software Reliability
+10/47Duke ECE -Guest Lecture Feb 7, 2023 10/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1
+â€¢Most of previous work in OS reliability only take into account
+failures at the kernel space.
+â€“i.e., failures in OS services and OS applications are not considered to 
+estimate the reliability figures.QoE in Software Reliability
+11/47Duke ECE -Guest Lecture Feb 7, 2023 11/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1
+â€¢Analyzing failures only at the kernel space is not appropriate 
+to capture the user experience in terms of OS reliability.
+â€“From the userâ€™s perspective, it does not matter whether the failure 
+took place: kernel space or user space (OS Apps or OS Services).QoE in Software Reliability
+12/47Duke ECE -Guest Lecture Feb 7, 2023 12/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1
+â€¢Users do not know where the OS failures come from (kernel 
+or user space).
+â€“E.g., a failure during a system updating, caused by a faulty update 
+service , running at user space, can cause the OS malfunctioning.
+â€¢This type of OS failure is not accounted if only kernel failures are considered.
+â€¢In this case, the userâ€™s experience in terms of OS reliability is certainly affected, 
+regardless of the correct OS kernel functioning.
+â€“At the end of the day, the quality of the userâ€™s experience 
+reverberates on the reputation of the software product. QoE in Software Reliability
+13/47Duke ECE -Guest Lecture Feb 7, 2023 13/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1 -Material
+â€¢2,634 failure records analyzed 
+â€“OS kernel, OS Service, and OS applications.
+â€¢Collected from 106 computers running Windows 7 OS.
+â€¢The samples were divided into two groups:
+G1:failures of 50 computers from the same organization
+G2:failures of 56 computers from different organizationsQoE in Software Reliability
+14/47Duke ECE -Guest Lecture Feb 7, 2023 14/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1 -MaterialQoE in Software Reliability
+Source Name  Category  
+MsInstaller  OS Service  
+Application Error  (explorer.exe)  OS Application  
+Application Hang  (explorer.exe)  OS Application  
+Microsoft Windows UserPnp  Device Drivers  
+Event Log  OS Service  
+Microsoft Windows 
+StartupRepair  OS Service  
+Microsoft Windows WER 
+SystemErrorReporting  OS Service  
+ 
+Example of OS Failures
+15/47Duke ECE -Guest Lecture Feb 7, 2023 15/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1 -Material
+â€¢2,634 failure records analyzed 
+â€“OS kernel, OS Service, and OS applications.
+â€¢Collected from 106 computers running Windows 7 OS.
+â€¢The samples were divided into two groups:
+G1:failures of 50 computers from the same organization
+G2:failures of 56 computers from different organizationsQoE in Software Reliability
+16/47Duke ECE -Guest Lecture Feb 7, 2023 16/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #1 â€“ResultsQoE in Software Reliability
+Percentages of OS Failures per Category
+OS Failure 
+Category  (%) 
+G1 G2 
+OS Service  78.28  77.72  
+OS Application  14.87  22.12  
+OS Kernel    6.85   0.15 
+ 
+17/47Duke ECE -Guest Lecture Feb 7, 2023 17/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCQoE in Software Reliability
+Study #2
+Reliability Assessment ofCommercial Off-the-
+shelf Operating System Software :AnEmpirical
+Study .SBESC 2018 .
+18/47Duke ECE -Guest Lecture Feb 7, 2023 18/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #2 -Material
+â€¢5,351 failure records analyzed. 
+â€“OS kernel, OS Service, and OS applications.
+â€¢Collected from 113 computers running Windows 7 OS.
+â€¢The samples were divided into 4 groups:QoE in Software Reliability
+G1 G2 G3 G4 Total
+Sampling period (days) 329 379 360 1287 2,355
+Total of computers 23 36 10 44 113
+Total of OS failures 313 2864 233 1941 5,351
+% OSKNL 75.40 6.43 11.16 8.09 11.27
+% OSSVC 19.17 86.52 74.25 59.66 72.30
+% OSAPP 5.43 7.05 14.59 32.25 16.43
+OS failures normalized by 
+total of computers13.61 79.56 23.3 44.11 47.35
+19/47Duke ECE -Guest Lecture Feb 7, 2023 19/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #2 -ResultsQoE in Software Reliability
+0.00.10.20.30.40.50.60.70.80.91.0
+4 8 12 24 48 168 720R(t)
+Time (hour)
+ROSKNL(t)
+ ROSSVC(t)
+ ROSAPP(t)
+ ROS(t) RKNL(t) RSVC(t) RAPP(t) ROS(t)
+0.00.10.20.30.40.50.60.70.80.91.0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15R(t)
+Time (hour)ROS(t) RKNL(t) ROS(t) RKNL(t)
+20/47Duke ECE -Guest Lecture Feb 7, 2023 20/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #2 -ResultsQoE in Software Reliability
+0.00.10.20.30.40.50.60.70.80.91.0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15R(t)
+Time (hour)ROS(t) ROS(t) w/o AF2 ROS(t) w/o SF1
+ROS(t) w/o SF1 & SF3 ROS(t) w/o  AF2 & SF1 ROS(t) w/o AF2, SF1 & SF3ROS(t)
+ROS(t) w/o SF1 & SF3ROS(t) w/o AF2
+ROS(t) w/o AF2 & SF1ROS(t) w/o SF1
+ROS(t) w/o AF2, SF1 & SF3
+21/47Duke ECE -Guest Lecture Feb 7, 2023 21/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCQoE in Software Reliability
+Study #3
+Influence Factors on the Quality ofUser
+Experience inOS Reliability :AQualitative
+Experimental Study, ARES 2018 .
+22/47Duke ECE -Guest Lecture Feb 7, 2023 22/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3
+â€¢We proposed a new sub -class of system influence factors:
+â€“Software reliability influence factors (e.g., failure types , failure 
+effects , system usage context , â€¦). 
+â€¢We wanted to investigate the effects of these influence 
+factors on the userâ€™s perception of the OS reliability.
+â€“For this, we conducted a qualitative study with 241 human subjects: 
+â€¢Our goal was to answer the following research question:
+â€“Do different OS failure types affect differently the user 
+perception of OS reliability?QoE in Software Reliability
+23/47Duke ECE -Guest Lecture Feb 7, 2023 23/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 -Material
+â€¢We surveyed 241 human subjects
+â€“121 responded an online questionnaire.
+â€“120 participated in a laboratory experiment.QoE in Software Reliability
+24/47Duke ECE -Guest Lecture Feb 7, 2023 24/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 -Material
+â€¢Online questionnaire
+â€“It consisted of eight different scenarios. 
+â€“The first four represented different computer works, contexts, failure 
+events, and consequences. 
+â€“The other four used the same computer work and context but varied 
+the failure events and consequences. 
+â€“The respondents answered questions about how much their 
+experience would be negatively affected if they were experiencing 
+those failure scenarios in real life.QoE in Software Reliability
+25/47Duke ECE -Guest Lecture Feb 7, 2023 25/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 -Material
+â€¢Example of Scenario #1QoE in Software Reliability
+Youareakeynote speaker atavery important event .Afewminutes before thelecture, youturn onyour
+computer .During theoperating system's startup process, afailure occurs, andthefollowing failure message
+appears onthescreen :
+Youchoose the"Start Windows Normally" option andthecomputer reboots .After thereboot, youcanuse
+thecomputer without anyproblem .However, youstart your presentation afewminutes late.
+26/47Duke ECE -Guest Lecture Feb 7, 2023 26/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 -Material
+â€¢Example of Scenario #5QoE in Software Reliability
+Imagine thatyouarewriting areport thatneeds tobedelivered in15days .While youarewriting thereport,
+thefollowing message suddenly appears onyour screen andthecomputer stops working :
+Thecomputer restarts normally, butyourealize you've lostthelastchanges inthedocument, andyoumust
+rewrite them .Despite thisfailure, youcanfinish thereport ontime.
+27/47Duke ECE -Guest Lecture Feb 7, 2023 27/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 -Material
+â€¢Laboratory experiment
+â€“Expose human subjects to software failure situations during an 
+ordinary computer task (e.g., type writing a text, opening and printing 
+a document file, etc.).
+â€“We created a failure simulation tool for this purpose, allowing us to 
+perform predefined failure events.
+â€“We exposed the subjects to different types of failures (OS kernel, OS 
+service, OS application, Non -OS applications).QoE in Software Reliability
+28/47Duke ECE -Guest Lecture Feb 7, 2023 28/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 -Material
+â€¢Lab experiment demonstrationQoE in Software Reliability
+29/47Duke ECE -Guest Lecture Feb 7, 2023 29/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 â€“Results
+â€¢The factor failure type had no significant influence on the 
+userâ€™s perceived QoE. 
+â€¢Other factors arose as more influential: 
+â€“Consequence
+â€“Context ( deadline )
+â€“Failure event
+â€“Failure message
+â€“Recoverability
+â€“Solution expectancy
+â€“Frequency of failure events
+â€“(Un)Familiarity with the failure eventQoE in Software Reliability
+The top-three factors that
+impacted negatively the
+usersâ€™ QoE.
+30/47Duke ECE -Guest Lecture Feb 7, 2023 30/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #3 â€“ResultsQoE in Software Reliability
+â€¢Other important findings:
+â€“Expectation is an influence factor whose effects impacted the userâ€™s 
+QoE in our study; especially in terms of solution expectancy to fix 
+the failure. 
+â€“Similarly, the amount of time and effort needed to recover from a 
+failure event also influenced the userâ€™s QoE. 
+â€¢Once the failure event is experienced, its effects on the QoE may be attenuated 
+if the recovery is quick and easy to perform without major consequences. 
+â€¢e.g., an OS kernel crash causes the system halt. If after the OS reboot the 
+system gets ready to be used quickly and without major consequences (e.g., 
+loss of data), then the impact of this failure on the QoE is considered marginal.
+31/47Duke ECE -Guest Lecture Feb 7, 2023 31/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCQoE in Software Reliability
+Study #4
+Software Reliability and Quality ofUser
+Experience :AQuanti -Qualitative Study, Master
+Thesis, UFU 2019 .
+32/47Duke ECE -Guest Lecture Feb 7, 2023 32/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4
+â€¢This work extended Study #3
+â€“It follows a similar approach 
+â€¢Online questionnaire and laboratory experiment
+â€“Quantitative and qualitative data analyses. 
+â€¢Our goal was to answer the following research questions:
+â€“Are the QoS -like reliability figures compatible with the userâ€™s 
+perception of the software reliability?QoE in Software Reliability
+33/47Duke ECE -Guest Lecture Feb 7, 2023 33/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4 -Material
+â€¢We surveyed 486 human subjects
+â€“400 responded an online questionnaire.
+â€“86 participated in a laboratory experiment.QoE in Software Reliability
+34/47Duke ECE -Guest Lecture Feb 7, 2023 34/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4 -Material
+â€¢Online questionnaire
+â€“Added a MTBF to each scenario description.QoE in Software Reliability
+Scenario ImpactType of 
+MTBFMTBF Î» ð‘¹ð’•
+#1 Low MTBF (short) 1 1/1 36.80%
+#2 Low MTBF (long) 7 1/7 81.00%
+#3 High MTBF (short) 1 1/1 36.80%
+#4 HIgh MTBF (long) 15 1/15 93.50%
+35/47Duke ECE -Guest Lecture Feb 7, 2023 35/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4 -Material
+â€¢Online questionnaire
+â€“Based on the scenario exposed to the subjects, we asked them to 
+quantify their perceived reliability of the software .
+â€“Next, we estimate the R(t), based on the scenario data and an 
+appropriate classical model (e.g., Poisson, exponential, etc.).
+â€¢ð‘ƒð‘‹<ð‘¥=(ðœ†ð‘¡)ð‘¥ð‘’âˆ’ðœ†ð‘¡
+ð‘¥!,ð‘¥=0,1,2,â€¦
+â€¢ð‘…ð‘¡=ð‘’âˆ’ðœ†ð‘¡
+â€“Also, QoE in Software Reliability
+Based ontheabove -mentioned scenario, what isthereliability youassign tothissoftware (0%to100%)?
+36/47Duke ECE -Guest Lecture Feb 7, 2023 36/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4 -Material 
+â€¢Laboratory experiment
+â€“Same approach and instrumentation used in Study #3.QoE in Software Reliability
+37/47Duke ECE -Guest Lecture Feb 7, 2023 37/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4 -Results
+â€¢Online questionnaireQoE in Software Reliability
+1 2 3 4
+ð‘¹(ð’•) 36.80 % 81.00 % 36.80 % 93.50 %
+ð‘¹    (ð’•) 47.62 % 43.46 % 23.83 % 20.71 %
+ð‘¹(ð’•)â€“ð‘¹    (ð’•) -10.82 % 37.54 % 12.97 % 72.79 %
+ð‘¹    (ð’•) 50.00 % 43.00 % 16.00 % 11.00 %
+ð‘¹(ð’•)â€“ð‘¹    (ð’•) -13.20 % 38.00 % 20.80 % 82.50 %
+ð‘¹    (ð’•) 50.00 % 50.00 % 10.00 % 1.00%
+ð‘¹      (ð’•) 100.00 % 100.00 % 100.00 % 100.00 %
+ð‘¹      (ð’•) 0.00% 0.00% 0.00% 0.00%
+ð‘¹     (ð’•) 28.07 % 26.01 % 24.02 % 23.51 %
+38/47Duke ECE -Guest Lecture Feb 7, 2023 38/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4 -Results
+â€¢Online questionnaireQoE in Software Reliability
+Scenario 1
+ Scenario 2
+ Scenario 3
+ Scenario 4
+39/47Duke ECE -Guest Lecture Feb 7, 2023 39/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCStudy #4 -Results
+â€¢Laboratory experimentQoE in Software Reliability
+1 2 3 4
+ð‘¹(ð’•) 36.80 % 81.00 % 36.80 % 93.50 %
+ð‘¹    (ð’•) 56.83 % 40.53 % 14.13 % 09.81 %
+ð‘¹(ð’•)â€“ð‘¹    (ð’•) -20.03 % 40.47 % 22.67 % 83.69 %
+ð‘¹    (ð’•) 53.50 % 40.00 % 10.00 % 1.50%
+ð‘¹(ð’•)â€“ð‘¹    (ð’•) -16.70 % 41.00 % 26.80 % 92.00 %
+ð‘¹    (ð’•) 50.00 % 50.00 % 0.00% 0.00%
+ð‘¹      (ð’•) 100.00 % 85.00 % 75.00 % 70.00 %
+ð‘¹      (ð’•) 4.00% 0.00% 0.00% 0.00%
+ð‘¹     (ð’•) 21.02 % 21.48 % 17.00 % 15.65 %
+40/47Duke ECE -Guest Lecture Feb 7, 2023 40/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SC
+Study #4 -Results
+â€¢Online questionnaireQoE in Software Reliability
+Scenario 1 Scenario 2 Scenario 3 Scenario 4
+41/47Duke ECE -Guest Lecture Feb 7, 2023 41/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCSummary / Takeaways:
+â€¢Is there any association between software reliability and 
+the quality of user experience?
+â€“The results suggest that there is, but the type of association still not 
+clear yet.
+â€¢Do different OS failure types affect differently the user 
+perception of OS reliability?
+â€“The results suggest that the factor failure type has no significant influence on 
+the userâ€™s perceived QoE. 
+â€¢Are the QoS -like reliability figures compatible with the 
+userâ€™s perception of the software reliability?
+â€“Both online survey and laboratory experiment showed strong evidence that, 
+for several scenarios, they differ significantly.QoE in Software Reliability
+42/47Duke ECE -Guest Lecture Feb 7, 2023 42/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCReferences
+â€¢[SACâ€™13] R. Matias, G. D. Oliveira, L. B. Araujo, "Operating system reliability from the quality of 
+experience viewpoint: an exploratory study," Proc. of ACM SAC, 2013. 
+â€¢[SACâ€™14] R. Matias, M. Prince, L. B. Araujo, C. Sousa, L. Henrique, "An empirical exploratory study on 
+operating system reliability," Proc. of ACM SAC, 2014.
+â€¢[SBESCâ€™15] C. A. R. Dos Santos, R. Matias, â€œAn Empirical Study on Failure Causes in a Commercial 
+Off-the-Shelf Operating System,â€ Proc. of SBESC, 2015. 
+â€¢[SACâ€™16] C. A. R. Dos Santos, R. Matias, "Exploratory Analysis on Failure Causes in a Mass -Market 
+Operating System," Proc. of ACM SAC, 2016.
+â€¢[SACâ€™17] C. A. R. Dos Santos, R. Matias, "An empirical study on patterns of failure causes in a mass -
+market operating system," Proc. of ACM SAC, 2017.
+â€¢[ARESâ€™18] D. Yabe, C. A. R. Dos Santos, L. Miranda, R. Matias, "Influence Factors on the Quality of 
+User Experience in OS Reliability: A Qualitative Experimental Study," Proc. of ARES, 2018.
+â€¢[JSSâ€™18] C. A. R. Dos Santos, R. Matias, â€œFailure patterns in operating systems: An exploratory and 
+observational study,â€ Journal of System and Software, 2018.
+â€¢[SBESCâ€™18] C. A. R. Dos Santos, M. Prince, R. Matias, L. Miranda, V. F. Maciel, â€œReliability Assessment 
+of Commercial Off -the-Shelf Operating System Software: An Empirical Study,â€ Proc. of SBESC, 2018. 
+â€¢[MTâ€™19] L. Miranda, R. Matias (advisor), â€œSoftware Reliability and Quality of User Experience: A Quanti -
+Qualitative Study, Master Thesis, UFU 2019.QoE in Software Reliability
+43/47Duke ECE -Guest Lecture Feb 7, 2023 43/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCReferences
+â€¢[SBESCâ€™19] C. A. R. Dos Santos, R. Matias, â€œAn Empirical Exploratory Analysis of Failure Sequences in 
+a Commodity Operating System,â€ Proc. of SBESC, 2019. 
+â€¢[SBESCâ€™20] C. A. R. Dos Santos, R. Matias, â€œA Statistical Approach to Predict Operating System 
+Failures Based on Multiple Failures Association,â€ Proc. of SBESC, 2020. 
+â€¢[SBESCâ€™21] C. A. R. Dos Santos, R. Matias, â€œA Multisite Characterization Study on Failure Causes in 
+System and Applications Software,â€ Proc. of SBESC, 2021. QoE in Software Reliability
+44/47Duke ECE -Guest Lecture Feb 7, 2023 44/45Brazilian Symposium on Computing System Engineering (SBESCâ€™11) Nov 2011, FlorianÃ³polis SCThank You!
+Rivalino Matias Jr.
+rivalino@ufu.br
+45/47Duke ECE -Guest Lecture Feb 7, 2023 45/45
